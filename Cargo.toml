@@ -7,6 +7,9 @@ edition = "2018"
 [[bin]]
 name = "day1"
 
+[[bin]]
+name = "day2"
+
 [dependencies]
 lazy_static = "1.4.0"
 itertools = "0.10.0"
