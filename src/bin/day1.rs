@@ -2,9 +2,6 @@ use std::error::Error;
 use std::io::{self, Read};
 use std::{boxed::Box, env};
 
-use lazy_static::lazy_static;
-use regex::Regex;
-
 fn solve1(buffer: &str) -> Result<i64, Box<dyn Error>> {
     let mut floor = 0;
     for ch in buffer.chars() {
@@ -50,15 +47,4 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     eprintln!("Time: {}ms", now.elapsed().as_millis());
     Ok(())
-}
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    #[test]
-    fn test1() {}
-
-    #[test]
-    fn test2() {}
 }
