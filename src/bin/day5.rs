@@ -121,14 +121,3 @@ fn main() -> Result<(), Box<dyn Error>> {
     eprintln!("Time: {}ms", now.elapsed().as_millis());
     Ok(())
 }
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    #[test]
-    fn test1() {}
-
-    #[test]
-    fn test2() {}
-}
